@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import io from 'socket.io-client';
 import './Timer.css';
 
-const socket = io();
+const socket = io("https://timer-ixps.vercel.app/");
 
 function Timer() {
   const [timer, setTimer] = useState(15);
